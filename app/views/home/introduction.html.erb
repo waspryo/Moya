@@ -1,0 +1,165 @@
+<header>
+  <div class="bg-dark collapse" id="navbarHeader" style="">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">モヤモヤについて</h4>
+          <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">コンタクト</h4>
+          <ul class="list-unstyled">
+            <li>
+              <a href="https://twitter.com/　target="_blank"" class="text-white">ツイッター</a>
+            </li>
+            <li>
+              <a href="#" class="text-white">フェイスブック</a>
+            </li>
+            <li>
+              <a href="#" class="text-white">お問い合わせ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="top" class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2" viewbox="0 0 24 24" focusable="false">
+          <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+          <circle cx="12" cy="13" r="4"></circle>
+        </svg>
+        <strong>New もや様 Box</strong>
+      </a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+  <style>
+    h1 {
+      padding-top: 20px;
+      text-align: center;
+    }
+    .col-md-12  {
+      text-align: center;
+    }
+    #text_q {
+      padding-top: 150px;
+    }
+  </style>
+</header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+<div align="center">
+<font size="6">
+<div id="text_q"></div>
+</font>
+<div id="text_s"></div>
+<div id="text_a"></div>
+
+</div>
+
+<script type="text/javascript">
+//問題と解答
+qa = new Array();
+qa[0] = ["ようこそNewもや様Boxへ<br>ここに来たということは<br>あなたモヤっとしているのですね（笑）<br>ここからはモヤ旅を始めますよ！<br>準備はいいですか？<br>もう後戻りはできません、いいですか？","次へ","少数","河豚",1];
+qa[1] = ["あなたは<br>人生で何を大切にしていますか？<br>いきなり困りましたか？","次へ","水母","水星",2];
+qa[2] = ["例えば、<br>仕事、お金、承認、評価、服、<br>自由、楽しい、癒し、キラキラ…<br><br>あなたが思う大切なことなので、<br>ここに答えも制限もありません。","次へ","鍋牛","蝸牛",3];
+qa[3] = ["今まで<br>あなたは自分の大切にしてることを<br>どれだけ考えてきたでしょうか？<br>えっ！考えたこともなかった？<br><br>さぁ、では<br>では考えてみましょう？","次へ","飛蟻","飛脚",1];
+qa[4] = ["改めて、あなたは<br>人生で何を大切にしていますか？<br>いくつでも構いません。<br>あなたの答えはあなたにしかありません。<br><br>出し切りましたか？","次へ","sea horse","sea dragon",2];
+qa[5] = ["この中で優先順位があるはずです。<br><br>大切なことを聞いているので<br>すべて大切だと思いますが、<br>今の自分にとって<br>優先順位が一番<br>高いものは何ですか？","次へ","suna","tuna",3];
+qa[6] = ["そうなんですね！<br>それはなぜ大切なのですか？","次へ","dragonfly","butterfly",2];
+qa[7] = ["そうなのですね、<br>ではもう一度聞きます。<br>どおして、それが大切なのですか？","次へ","starshell","starmine",1];
+qa[8] = ["今それは大切に出来ていますか？","次へ","スピカ","シリウス",3];
+qa[9] = ["出来ていないとしたら<br>何が止めていますか？<br><br>出来ているとしたら、<br>さらに豊かになるためには<br>何を加えたら良いと思いますか？","次へ","木星","天王星",2];
+qa[10] = ["では次の診断に移ります。<br>モヤモヤしますか？<br>大丈夫です。<br>あなたの無意識は知っていますから。","次へ","スピカ","シリウス",3];
+qa[11] = ["さっ！<br>次の質問に行く前にこれから<br>あなたに３つのタイプから<br>1つを選択していただきます。<br><br>もしかしたら<br>選択したそのタイプが合わないこともあるかも<br>しれません。<br>その時はいつでも変更することが出来ます。<br><br>いつでも選択肢はあなたが持っています。","次へ","スピカ","シリウス",3];
+//初期設定
+count = 0; //問題番号
+q_sel = 1; //選択肢の数
+
+//最初の問題
+quiz();
+
+//問題表示
+function quiz() {
+ //問題
+ //document.getElementById("text_q").innerHTML = (count + 1) + "問目：" + qa[count][0];
+ document.getElementById("text_q").innerHTML =  qa[count][0];
+ //選択肢
+s = "";
+if (count!=11){
+
+for (n=1;n<=q_sel;n++) {
+ s += "【<a href='javascript:answer("+n+")'>" + qa[count][n] + "</a>】";
+}
+} else{
+ s += "<a href='type' class='btn btn-primary my-2''./shindan.html'>" + "３つのタイプから選ぶ" + "</a>";//変更部分
+ }
+document.getElementById("text_s").innerHTML = s;
+}
+
+//ページ遷移表示
+/*function answer(num) {
+var s;
+s = (count + 1) + "問目：";
+//答え合わせ
+if (num == qa[count][q_sel + 1]) {
+ //正解
+ s += "○" + qa[count][num];
+} else {
+ s += "×" + qa[count][num];
+}
+document.getElementById("text_a").innerHTML = s;
+
+//次の問題を表示
+count++;
+if (count == 0) {
+
+ //quiz();
+} else {
+ //終了
+ document.getElementById("text_q").innerHTML = "";
+ document.getElementById("text_s").innerHTML = "";
+}
+}
+*/
+//解答表示
+function answer(num) {
+ var s;
+ s = (count + 1) + "問目：";
+ //答え合わせ
+ if (num == qa[count][q_sel + 1]) {
+  //正解
+  s += "○" + qa[count][num];
+ } else {
+  s += "×" + qa[count][num];
+ }
+ //document.getElementById("text_a").innerHTML = s;
+
+ //次の問題を表示
+ count++;
+ if (count < qa.length) {
+  quiz();
+ } else {
+  //終了
+  document.getElementById("text_q").innerHTML = "";
+  document.getElementById("text_s").innerHTML = "";
+ }
+}
+
+</script>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <!-- <a href="type" class="btn btn-primary my-2">3つのタイプから選ぶ</a> -->
+    </div>
+  </div>
+</div>

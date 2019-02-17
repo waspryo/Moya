@@ -1,0 +1,94 @@
+<header>
+  <div class="bg-dark collapse" id="navbarHeader" style="">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">モヤモヤについて</h4>
+          <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">コンタクト</h4>
+          <ul class="list-unstyled">
+            <li>
+              <a href="https://twitter.com/　target="_blank"" class="text-white">ツイッター</a>
+            </li>
+            <li>
+              <a href="#" class="text-white">フェイスブック</a>
+            </li>
+            <li>
+              <a href="#" class="text-white">お問い合わせ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="top" class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2" viewbox="0 0 24 24" focusable="false">
+          <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+          <circle cx="12" cy="13" r="4"></circle>
+        </svg>
+        <strong>New もや様 Box</strong>
+      </a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="album py-5 bg-light">
+  <div class="container">
+  <div class="col-md-12 text-center">
+    <h1>下記の3つより、今のあなたの気持ちに近いタイプを選んでください。</h1>
+  </div>
+
+    <div class="row">
+      <div class="card-deck">
+        <div class="card">
+          <%= image_tag "/type1.jpg", class: "responsive-img" %>
+          <div class="card-body">
+            <h5 class="card-title"><strong>もや安定型</strong></h5>
+            <p class="card-text">他人や自分を信頼してコミュニケーションを取れるタイプ</p>
+            <p class="card-text">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <%= link_to '詳しく見る', '/home/type' %>
+                </div>
+              </div>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <%= image_tag "/type2.jpg", class: "responsive-img" %>
+          <div class="card-body">
+            <h5 class="card-title"><strong>もや不安型</strong></h5>
+            <p class="card-text">恋愛でも、それ以外でも人間関係でも自分に自信のないタイプ</p>
+            <p class="card-text">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                <%= link_to '詳しく見る', '/home/type' %>
+                </div>
+              </div>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <%= image_tag "/type3.jpg", class: "responsive-img" %>
+          <div class="card-body">
+            <h5 class="card-title"><strong>もや回避型</strong></h5>
+            <p class="card-text">他人は基本的に信用せず、自分の力で行きていこうと考えているタイプ</p>
+            <p class="card-text">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                <%= link_to '詳しく見る', '/home/question' %>
+                </div>
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
