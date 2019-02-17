@@ -22,9 +22,12 @@
   height: 250px;
 }
 .jumbotron {
-  background: linear-gradient(-45deg, rgba(246, 255, 0, .8), rgba(255, 0, 161, .8))   fixed;
-  background-size: cover;
+  background: url(/cloud.jpg) ;
+  background-size: 1550px;
+  background-color: #fff!important;
   color: #000;
+  background-repeat:no-repeat;
+  background-position: -50pt;
   letter-spacing: 4px;
 }
 .container h1 p {

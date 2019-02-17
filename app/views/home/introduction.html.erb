@@ -48,8 +48,35 @@
     #text_q {
       padding-top: 150px;
     }
+    #text_s {
+      padding-bottom: 150px;
+    }
+    #pic {
+      background: url(/cloud1.jpg) ;
+      background-size: 1510px;
+      background-color: #fff!important;
+      color: #000;
+      background-repeat:no-repeat;
+      background-position: 50% 50%;
+      background-attachment: fixed;
+      letter-spacing: 4px;
+    }
+    .btn-primary {
+      background-color: #22eaaa;
+      border-color: #22eaaa;
+      color: #fff;
+    }
+    .btn-primary:hover {
+      #22eaaa
+    }
+      .btn-default {
+        background-color: #007bff;
+        border-color: #007bff;
+        color: #fff;
+    }
   </style>
 </header>
+<div id="pic">
 <div class="container">
   <div class="row">
     <div class="col-md-12">
@@ -61,7 +88,7 @@
 <div id="text_a"></div>
 
 </div>
-
+</div>
 <script type="text/javascript">
 //問題と解答
 qa = new Array();
@@ -94,7 +121,7 @@ s = "";
 if (count!=11){
 
 for (n=1;n<=q_sel;n++) {
- s += "【<a href='javascript:answer("+n+")'>" + qa[count][n] + "</a>】";
+ s += "<a href='javascript:answer("+n+")' class='btn btn-default my-2'>" + qa[count][n] + "</a>";
 }
 } else{
  s += "<a href='type' class='btn btn-primary my-2''./shindan.html'>" + "３つのタイプから選ぶ" + "</a>";//変更部分
