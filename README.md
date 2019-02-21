@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ひきこもりハッカソンに参加した際に制作した自己診断型コミュニティサービスです。
 
-Things you may want to cover:
+Ruby on Rails 
+javaScript
+HTML, SCSS
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#実装した機能
+JavaScriptで質問項目に対して同じページ内でリロードする機能
